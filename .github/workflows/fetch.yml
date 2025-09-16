@@ -23,5 +23,7 @@ jobs:
       - name: Fetch latest articles
         run: Rscript scrape-news.R
         
+      - name: Commit changes
+        uses: stefanzweifel/git-auto-commit-action@v5
         
         
