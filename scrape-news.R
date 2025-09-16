@@ -7,7 +7,7 @@ req <- request("https://newsapi.org/v2/everything") |>
     q = '`"data science"`',
     from = date,
     pageSize = 10,
-    apiKey = Sys.getenv("secrets.NEWSAPIKEY")
+    apiKey = Sys.getenv("NEWSAPIKEY")
   )
   
 req_perform(req, path = paste0("data/", date, ".json"))
