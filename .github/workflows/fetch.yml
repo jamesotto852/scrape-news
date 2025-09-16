@@ -23,7 +23,7 @@ jobs:
       - name: Fetch latest articles
         run: Rscript scrape-news.R
         env:
-          NEWS_API_KEY: ${{ secrets.NEWSAPIKEY }}
+          NEWSAPIKEY: ${{ secrets.NEWSAPIKEY }}
         
       - name: Commit changes
         uses: stefanzweifel/git-auto-commit-action@v5
